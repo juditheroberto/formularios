@@ -17,39 +17,44 @@
             
         }
 
+        #cadastro {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display:inline-block;
+        }
+
         
     </style>
 </head>
 <body>
     <h1>"CADASTRO DA ONG BEM SERVIR"</h1>
-    <form  action="cadastro.php" method="post" autocomplete="on">
-        <p><label for="inome">Nome</label>
-            <input type="text" name id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="nome" size="10">
-        </p>
-        <p>
-         <label for="imedia">Média</label>
-         <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"  value="5" >
-        </p>
-
-        <p>
-            <label for="imes">Periodo Letivo</label>
-            <input type="month" name="mes" id="imes" value="2026-10" >
-        </p>
-
-        <p>
-            <label for="idia">Dia da Prova</label>
-            <input type="date" name="dia" id="idia" value="2026-10-24">
-        </p>
-
-        <p>
-            <label for="ihora">Horário da Prova</label>
-            <input type="time" name="hora" id="ihora" value="14:00">
-        </p>
-         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-         </p>
-    </form>
+    <div id="cadastro">
+        <form  action="cadastro.php" method="post" autocomplete="on">
+            <p><label for="inome">Nome</label>
+                <input type="text" name id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="nome" size="10">
+            </p>
+            <p>
+             <label for="imedia">Média</label>
+             <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"  value="5" >
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes" value="2026-10" >
+            </p>
+            <p>
+                <label for="idia">Dia da Prova</label>
+                <input type="date" name="dia" id="idia" value="2026-10-24">
+            </p>
+            <p>
+                <label for="ihora">Horário da Prova</label>
+                <input type="time" name="hora" id="ihora" value="14:00">
+            </p>
+             <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+             </p>
+        </form>
+    </div>
     
 </body>
 </html>
