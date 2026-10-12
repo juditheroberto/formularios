@@ -23,13 +23,19 @@
             justify-content: center;
             margin: auto;
             width: 400px;
+            height:300px;
             font-size: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             border: 2px solid black;
             border-radius: 20px;
-            
-            
-        }
+           }
+
+           .botao {
+            margin: auto;
+            display:flex;
+            justify-content: center;
+           
+           }
 
         
     </style>
@@ -57,7 +63,7 @@
                 <label for="ihora">Horário da Prova</label>
                 <input type="time" name="hora" id="ihora" value="14:00">
             </p>
-             <p>
+             <p class="botao">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
              </p>
