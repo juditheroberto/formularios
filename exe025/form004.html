@@ -3,21 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormulárioDocument</title>
+    <title>Formulário </title>
+    <style>
+
+        body {
+            background-image: linear-gradient( to right, aqua, rgb(80, 219, 80), orange );
+            background-image: url(imagem/ong-png.png);
+            background-size: 500px;
+        }
+
+        h1 {
+            margin: 50px;
+            font-size: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        /* Estiliza apenas caixas de texto comuns e de senha */
+input[type="submit"],
+input[type="reset"],
+input[type="tel"],
+input[type="email"] {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid yellowgreen;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none; /* Remove a bordinha padrão feia do navegador */
+}
+
+
+
+.frente {
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.frente :hover {
+    background-color:  rgba(212, 57, 57, 0.671);
+}
+
+.botao {
+    justify-content: center;
+     text-align: center;
+     padding: 10px;
+}
+
+.botao :hover {
+    background-color: rgba(216, 45, 45, 0.493);
+}
+
+.imagem {
+    width: 500px;
+    margin:auto;
+    background-color: rgba(0, 255, 255, 0.418);
+    text-align:right;
+    font-size: 30px;
+    border-radius: 20px;
+}
+    </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadstro.php" method="get">
-         <label for="iemail" >E-mail</E-mail>
-         <input type="email" name="email" id="iemail" autocomplete="email" required>
 
-         <p>
-            <label for="itel">Telefone</label>
+       <p>
+        Estou ficando cansado <br>
+        Dessa tecnologia fria, <br>
+        Que manda mensagens curtas <br>
+        E não demonstra alegria. <br>
+        Mas para falar de amor, <br>
+        De carinho e de paixão, <br>
+        Eu prefiro escrever versos <br>
+        Com a tinta do coração.
+    </p>
+
+    <section class="imagem" >
+        <p>
+            Não é mais como era antes, <br>
+            Quando o amor era declarado, <br>
+            Com cartas escritas à mão <br>
+            E um beijo apaixonado. <br>
+            Hoje existe emoji e flor, <br>
+            Mas nenhum símbolo traduz <br>
+            O tamanho do meu amor <br>
+            E a felicidade que você me traz.
+        </p>
+    </section>
+
+    <section class="normal">
+    <p>
+        Judith, você é minha rainha, <br>
+        A dona do meu coração. <br>
+        Meu amor não cabe em mensagens, <br>
+        Nem em qualquer publicação. <br>
+        Se eu pudesse desenhar <br>
+        Tudo aquilo que sinto por você, <br>
+        Desenharia um coração <br>
+        Com seu nome até morrer.
+    </p>
+    </section>
+    
+    <section class="imagem" >
+        <p>
+            Tenho saudade das cartas <br>
+            Que levavam tanto tempo a chegar, <br>
+            Mas traziam dentro das linhas <br>
+            Um amor que fazia sonhar. <br>
+            Hoje a mensagem chega na hora, <br>
+            Mas o que eu quero, de verdade, <br>
+            É estar perto de você, <br>
+            Vivendo a nossa felicidade.
+        </p>
+    </section>
+
+
+<section class="normal">
+    <p>
+        Minha rainha, minha amada, <br>
+        Você é meu porto seguro, <br>
+        Meu presente mais bonito, <br>
+        Meu amor sincero e puro. <br>
+        Depois de tantos anos juntos, <br>
+        De lutas e de emoção, <br>
+        Continuo apaixonado <br>
+        Por essa linda mulher, <br>
+        A dona da minha admiração.
+    </p>
+</section>
+
+<section class="imagem" >
+    <p>
+        E quando a noite chegar <br>
+        E o silêncio nos envolver, <br>
+        Eu vou agradecer a Deus <br>
+        Por ter colocado você <br>
+        Na minha vida, no meu caminho, <br>
+        Na minha história de amor. <br>
+        Porque você, minha Judith, <br>
+        É bênção do meu Senhor.
+    </p>
+    </section>
+    
+    <section class="normal">
+        <p>
+            Para orar não precisa internet, <br>
+            Nem mensagem, nem aparelho. <br>
+            Basta juntar nossas mãos <br>
+            E olhar no mesmo espelho. <br>
+            Dois corações apaixonados, <br>
+            Dois joelhos no chão, <br>
+            Pedindo a Deus que conserve <br>
+            Para sempre nossa união.
+        </p>
+    </section>
+
+
+<h2>
+    "JUDITH, <br> MINHA RAINHA, <br>
+    MEU AMOR, <br> MINHA VIDA!"
+</h2>
+
+<section class="imagem">
+    <p>
+        Se o mundo inteiro tem tecnologia, <br>
+        Se tudo hoje é abreviado, <br>
+        O meu amor por você, Judith, <br>
+        Nunca será resumido, <br>
+        Nem apagado, nem esquecido.
+    </p>
+    
+    <p>
+        Porque você é minha história, <br>
+        Meu presente e meu amanhã. <br>
+        É o amor que me acompanha <br>
+        Desde o raiar até a manhã.
+    </p>
+</section>
+
+<h3 class="destaque
+">TE AMO, JUDITH! ❤️</h3>
+
+
+    <form action="cadstro.php" method="get">
+         <p class="frente">
+             <label for="iemail" ><strong>E-mail</strong></label>
+             <input type="email" name="email" id="iemail" autocomplete="email" required> <br>
+         
+
+         
+            <label for="itel"><strong>Telefone</strong></label>
             <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
          </p>
 
-         <p>
-                <input type="submit" value="Enviar">
+         
+             <p class="botao">
+         
+                <input type="submit"value="Enviar">
                 <input type="reset" value="Limpar">
              </p>
     </form>
