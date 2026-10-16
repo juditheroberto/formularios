@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.sexo {
+    width: 300px;
+    margin: auto;
+    background-color: orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    
+}
+
+.esporte {
+    width: 300px;
+    margin: auto;
+    background-color: orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding-bottom: 20px;
+}
+
+.botao :hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.botao {
+    justify-content: center;
+    text-align: center;
+}
+
